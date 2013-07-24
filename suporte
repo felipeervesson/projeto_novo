@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício</title>
+         <script language="javascript" type="text/javascript">
+        function validar() {
+            var nome = document.forms["formulario"]["nome"].value;
+            var sobrenome = document.forms["formulario"]["sobrenome"].value;
+            var rg = document.forms["formulario"]["rg"].value;
+            var password = document.forms["formulario"]["password"].value;
+            var repetir_password = document.forms["formulario"]["repetir_password"].value;
+            
+            if (nome == "") {
+                alert('Preencha o campo com seu nome');
+                formulario.nome.focus();
+                return false;
+            }
+            if (sobrenome == "") {
+                alert('Preencha o campo com seu sobrenomee');
+                formulario.nome.focus();
+                return false;
+            }
+            
+
+            alert("Cadastrado com Sucesso!!!");
+        }
+     </script>
+        <style type="text/css">
+            .principal{
+                        width: 500px;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -250px;
+                      }
+            .pessoal_nomes{
+                          width: 100px;
+                          line-height:170%;
+                          float: left;
+                      }
+            .pessoal_campos{
+                          width: 350px;
+                          float: left;
+                }
+             .campo_nome{
+                    width: 190px;
+                }
+              .campo_sobrenome{
+                    width: 190px;
+                }
+        </style>
+    </head>
+    <body>
+        <form name="formulario" action="index.php" method="post">
+        <fieldset class ="principal">
+  
+            <center><tag><h2>Cadastro de usuário</h2></tag></center>
+	  
+        <fieldset  class="Cadastro"> 
+            <legend>Dados Pessoais</legend>
+             <div class ="pessoal_nomes"> 
+                <label for="nome"> Nome : </label> <br>
+                <label for="sobrenome"> Sobrenome : </label> <br>
+                <label for="RG"> RG : </label> <br>
+                <label for="E-mail">E-mail : </label> <br>
+              </div>
+              <div class ="pessoal_campos">
+                    <input type="text" id="nome" class ="campo_nome"/><br/> 
+                    <input type="text" id="sobrenome" class ="campo_sobrenome"/><br/>
+                    <input type="text" id="RG"/> 
+                    <input type="radio" name="sex" id="Masculino"/>
+                    <label for="Masculino"> Masculino </label>
+                    <input type="radio" name="sex" id="Feminino"/> 	  
+                    <label for="Feminino"> Feminino </label>
+                    <input type="text" id="E-mail"/><br/>
+               </div>   
+	<div>
+	     <input type="checkbox" name="areap" value="1" id="areap1"/>
+	     <label for="areap1">Desejo receber outras informações por E-mail. </label><br/><br/>   
+	</div>
+       
+        </fieldset>
+   
+   <fieldset  class="Experiencias"> 
+   <legend> Dados Proficionais </legend>
+      <label for="areap1"> Esperiência em programação ? </label>  
+       <input type="checkbox" name="areap" value="1" id="areap1"/><br/><br/>  
+       
+      <label for=”linguagem”> Linguagem: </label>
+      <select name="linguagem" id="linguagem">
+         <option label="Selecione" value="-1" selected="selected">Selecione</option>
+         <option label="HTML" value="A">HTML</option>
+         <option label="CSS" value="B">CSS</option>
+         <option label="JavaScript" value="V">JavaScript</option>
+         <option label="PHP" value="C">PHP</option><br/>
+         <option label="XML" value="D">XML</option>
+      </select><br/><br/>
+	  <div> Comentarios adicionais </div> <textarea name="Comentarios"></textarea></div>
+	  
+   </fieldset>
+   
+   <fieldset class="password">
+   <legend> Autenticação </legend>
+        <label for="password"> Password : </label>
+	     <input type="password" id="password"/>
+	<label for="Password"> Repetir Password : </label>
+	     <input type="Password" id="repetir_password"/><br/><br/> 
+   
+   </fieldset>
+        <center><div><button name=”submit” type=”submit” onclick ="return validar()">Submeter</button></div></center>
+   </fieldset> 
+   </form>
+    </body>
+    </head> 
+
+</html>
