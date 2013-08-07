@@ -51,8 +51,10 @@
 		<div style="clear: both;"></div>
 	</div>
 	<div id="rodape">
-		<div id="rodape_direita">hfghfghfgh
-			
+		<div id="rodape_direita">
+			Rua Candido Martins dos Santos - N°603<br/>
+			Parnamirim - RN - CEP: 59150-000<br/>
+			Email: <a href="MastersInfor:suportemi@live.com">suportemi@live.com</a>
 		</div>
 	</div>
 </div>
