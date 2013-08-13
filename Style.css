@@ -48,14 +48,15 @@ body {
 
 #esquerda {
 	float: left;
-	width: 150px;
-	min-height: 400px;
+	width: 746px;
+        height: 20px;
+	min-height: 20px;
 	border: 2px solid green;
 }
 
 #miolo {
 	float: left;
-	width: 400px;
+	width:550px;
 	min-height: 400px;
 	border: 2px solid blue;
 }
@@ -64,20 +65,24 @@ body {
 	float: right;
 	width: 190px;
 	min-height: 400px;
-	border: 2px solid yellow;
+	border: 1px solid yellow;
 }
 
 #menu {
 	width: 150px;
 	height: 400px;
+        display:inline;
 }
 
 .itemMenu {
-	width: 140px;
+        float:left;
+	width: 139px;
 	height: 21px;
 	background-color: lightyellow;
 	padding: 3px 0px 0px 10px;
 	border-bottom: 1px solid black;
+        text-align: center;
+        text-decoration-style: dashed;
 }
 
 #logo {
@@ -89,19 +94,20 @@ body {
 	margin-right: 20px;
 }
 
-.secao_miolo {
+/*.secao_miolo {
 	width: 350px;
 	height: 350px;
 	text-align: center;
 	background-color: blue;
 	margin: 2px 5px 4px 5px;
 }
-
+*/
 .secao_direita {
 	width: 185px;
 	height: 100px;
 	text-align: center;
-	background-color: bisque;
+        color:#ffffff;
+	background-color: black;
 	margin: 4px 5px 4px 5px;
 }
 

@@ -21,11 +21,11 @@
 	<div id="meio">
 		<div id="esquerda">
 			<div id="menu">
-				<div class="itemMenu">Principal</div>
-				<div class="itemMenu">Empresa</div>
-				<div class="itemMenu">Produtos</div>
-				<div class="itemMenu">Serviços</div>
-				<div class="itemMenu">Contato</div>
+                            <div class="itemMenu"><a href="">Principal</a></div>
+				<div class="itemMenu"><a href="">Empresa</a></div>
+				<div class="itemMenu"><a href="">Produtos</a></div>
+				<div class="itemMenu"><a href="">Serviços</a></div>
+				<div class="itemMenu"><a href="">Contato</a></div>
 			</div>
 		</div>
 
@@ -35,10 +35,10 @@
 
 		<div id="direita">
                  <div class="secao_direita">
-                     <form name="input" action=""method="get"> 
-                        Nome<input type="text" nome="user">
+                     <form action="processa.php" method="post"> 
+                        Nome<input type="text" name="user">
                      <br>
-                        Senha<input type="text" nome="user">
+                        Senha<input type="text" name="pass">
                      <br>
                      <input type="submit" value="Login">
                                 </form>
