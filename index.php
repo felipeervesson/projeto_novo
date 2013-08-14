@@ -4,7 +4,7 @@
 <meta http-equiv="Content-type" content="text/html;charset=ISO-8859-1" />
 <title>Exemplo Estrutura de Site Tableless</title>
 
-<link rel="stylesheet" type="text/css" href="estilo.css" />
+<link rel="stylesheet" type="text/css" href="Style.css" />
 <script language="javascript" src="script.js"></script>
 
 </head>
